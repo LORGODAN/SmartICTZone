@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartICTZone - Tutorials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    /* Basic Reset & Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #003366;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Tutorials Section */
+    .tutorials-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .tutorials-section h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .tutorials-section p {
+      font-size: 16px;
+      color: #444;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .video-card {
+      background: #ffffff;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .video-card iframe,
+    .video-card video {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+    .video-card h3 {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">SmartICTZone</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="tutorials.html" class="active">Tutorials</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tutorials Section -->
+  <section class="tutorials-section">
+    <h1>🎥 ICT Video Tutorials</h1>
+    <p>Watch step-by-step videos to master ICT concepts.</p>
+
+    <div class="video-grid">
+
+      <!-- YouTube Embed -->
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/DYgRqIeuwVQ&t=1078s" 
+                title="Introduction to Networking"
+                frameborder="0" 
+                allowfullscreen></iframe>
+        <h3>Introduction to Networking</h3>
+      </div>
+
+      <!-- Local Video Example -->
+      <div class="video-card">
+        <video controls>
+          <iframe src="https://www.youtube.com/embed/quW5dAGpXiU" 
+                title="programming basics"
+                frameborder="0" 
+                allowfullscreen></iframe>
+        <h3>Programming Basics</h3>
+      </div>
+
+      <!-- YouTube Embed -->
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                title="HTML Crash Course"
+                frameborder="0" 
+                allowfullscreen></iframe>
+        <h3>HTML for Beginners</h3>
+      </div>
+
+      <!-- Local Video Example -->
+      <div class="video-card">
+        <video controls>
+          <source src="videos/ict-tools.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Common ICT Tools</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartICTZone | Built by Lorgodan Makhaula</p>
+  </footer>
+
+</body>
+</html>

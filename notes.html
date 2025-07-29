@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartICTZone - Notes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    /* Font & Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #003366;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Notes Grid */
+    .notes-grid {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .notes-grid h1 {
+      font-size: 32px;
+    }
+    .notes-grid p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .note-card {
+      background: #ffffff;
+      border-left: 6px solid #00bcd4;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+    .note-card:hover {
+      transform: scale(1.02);
+    }
+    .note-card h3 {
+      margin-bottom: 10px;
+    }
+    .note-card p {
+      font-size: 14px;
+      color: #333;
+    }
+    .btn-download {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btn-download:hover {
+      background-color: #0097a7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">SmartICTZone</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="notes.html" class="active">Notes</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Notes Section -->
+  <section class="notes-grid">
+    <h1>📘 Study Notes Library</h1>
+    <p>Select a category and download helpful ICT materials:</p>
+
+    <div class="grid-container">
+      <div class="note-card">
+        <h3>📖 Introduction to ICT</h3>
+        <p>Basic concepts and history of ICT.</p>
+        <a href="LEVEL_1_ICT_complete_NOTES.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>🌐 Networking Basics</h3>
+        <p>LANs, WANs, topology types, and more.</p>
+        <a href="types-of-networks_2.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>💻 Web Development</h3>
+        <p>HTML, CSS, and JavaScript fundamentals.</p>
+        <a href="html-and-css-for-beginners_compress.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>🧠 Computer Hardware</h3>
+        <p>Learn about processors, memory, and input/output devices.</p>
+        <a href="INTRODUCTION_TO_COMPUTER_HARDWARE.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>🖥️ Programming Concepts</h3>
+        <p>Introduction to Python and programming logic.</p>
+        <a href="Programming in Python 💡.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>🔐 Cybersecurity Basics</h3>
+        <p>Threats, attacks, and basic protection methods.</p>
+        <a href="Introduction-cyber-security.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3> Occupation 2021-2024 Teveta papers</h3>
+        <p>Technology, numeracy, and communication.</p>
+        <a href="files/cybersecurity-basics.pdf" download class="btn-download">Download</a>
+      </div>
+
+      <div class="note-card">
+        <h3>fundamental 2021-2024 Teveta papers</h3>
+        <p>Technical drawing, science, and osh.</p>
+        <a href="files/cybersecurity-basics.pdf" download class="btn-download">Download</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartICTZone | Built by Lorgodan Makhaula</p>
+  </footer>
+
+</body>
+</html>
