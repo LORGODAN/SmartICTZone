@@ -90,6 +90,61 @@
       padding: 20px;
       margin-top: 40px;
     }
+     .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    font-size: 24px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background: #444;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
   </style>
 </head>
 <body>
@@ -97,6 +152,8 @@
   <!-- Header -->
   <header>
     <div class="logo">SmartICTZone</div>
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -159,6 +216,10 @@
   <footer>
     <p>&copy; 2025 SmartICTZone | Built by Lorgodan Makhaula</p>
   </footer>
-
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
 </body>
 </html>
