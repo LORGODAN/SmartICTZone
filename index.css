@@ -49,15 +49,12 @@ nav a {
   margin: 20px 0;
 }
 .btn {
-  background: transparent;
+  background: white;
   color: #003366;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 6px;
-  font-weight: bold;
-  border: 2px solid #003366; /* Optional: adds a border */
-  cursor: pointer; /* Makes it look clickable */
-}
+  font-weight: bold;}
 
 /* Features */
 .features {
@@ -146,5 +143,6 @@ footer {
       display: flex;
     }
   
+
 
 
