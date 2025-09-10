@@ -55,6 +55,8 @@ nav a {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  border: 2px solid #003366; /* Optional: adds a border */
+  cursor: pointer; /* Makes it look clickable */
 }
 
 /* Features */
@@ -144,4 +146,5 @@ footer {
       display: flex;
     }
   
+
 
