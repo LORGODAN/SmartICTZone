@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartICTZone - TEVETA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    /* Font & Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #003366;
+    }
+
+    /* Header */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* Notes Grid */
+    .notes-grid {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .notes-grid h1 {
+      font-size: 32px;
+    }
+    .notes-grid p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    .note-card {
+      background: #ffffff;
+      border-left: 6px solid #00bcd4;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease-in-out;
+    }
+    .note-card:hover {
+      transform: scale(1.02);
+    }
+    .note-card h3 {
+      margin-bottom: 10px;
+    }
+    .note-card p {
+      font-size: 14px;
+      color: #333;
+    }
+    .btn-download {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .btn-download:hover {
+      background-color: #0097a7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    font-size: 24px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .logo {width: 20px;
+    height: 20px;
+    vertical-align: middle; }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background: #444;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links.show {
+      display: flex;
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">SmartICTZone</div>
+     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <ul class="nav-links" id="navLinks">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="notes.html">Notes</a></li>
+         <li><a href="Teveta.html" class="active">Teveta</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Notes Section -->
+  <section class="notes-grid">
+    <img src="teveta.png" alt="teveta logo" class="logo">
+    <h1> TEVETA EXAMS PAPERS</h1>
+    <p>Select a year to view and download helpful past papers:</p>
+
+    <div class="grid-container">
+      <div class="note-card">
+        <h3>ICT LEVEL 1 PAPERS</h3>
+        <p></p>
+          <a href="Tevataone.html" target="_blank" class="btn-download">
+  Click Here!
+          </a>
+      </div>
+
+      <div class="note-card">
+        <h3>ICT LEVEL 2 PAPERS</h3>
+        <p></p>
+          <a href="tevetatwo.html" target="_blank" class="btn-download">
+  Click Here!
+          </a>
+      </div>
+
+      <div class="note-card">
+        <h3>ICT LEVEL 3 PAPERS</h3>
+        <p></p>
+          <a href="tevatathree.html" target="_blank" class="btn-download">
+  Click Here!
+          </a>
+      </div>
+
+      <div class="note-card">
+        <h3>ICT LEVEL 4 PAPERS</h3>
+        <p></p>
+          <a href="" target="_blank" class="btn-download">
+   Click Here!
+          </a>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SmartICTZone | Built by Lorgodan Makhaula</p>
+  </footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
